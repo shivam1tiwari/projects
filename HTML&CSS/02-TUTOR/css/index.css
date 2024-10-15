@@ -1,4 +1,4 @@
-*{
+*,html,body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -15,34 +15,79 @@ a{
 ul{
     list-style: none;
 }
-
 img{
-    width: 130px;
-    
-}
-.navbar{
-    background-color: black;
-    
+    width: 100%;
 }
 
+.logo{
+    width: 81px;
+    height: 32px;
+    
+}
+.navbar .container{
+    position: fixed;
+    padding: 1.5rem 0;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1000;
+    
+}
 .navbar-flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
+.navbar-menu{
+    font-size: 1.1rem;
+}
+.navbar-menu .nav-list{
+    display: flex;
+    gap: 3rem;
+}
+.navbar-menu .nav-list a{
+   color: white;
+   font-size: large;
+   font-weight: 500;
+}
+.hero{
+    background: #000 url(../images/header-background.jpg) center center / cover no-repeat;
+  
 }
 
-.nav-list{
+.hero .hero-container{
+     
+}
+.hero-container{
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    font-weight: 600;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 6rem;
+    padding: 11.5rem 2rem 8rem;
     
+}
+.hero-container .hero-content{
+    padding: 6rem 5rem;
+    color: white;
+    flex: 1;
+    h1{
+        font-size: 3rem;
+        margin: 1.5rem auto;
 
-   
-
+    }
+    p{
+       font-size: 1.5rem;
+       margin: 1.5rem auto;
+    }
+    button{
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        border-radius: 50px;
+        border-style: none;
+        background-color: rgb(220, 220, 46);
+    }
+}
+.hero-container .hero-img{
+ flex:2
 }
